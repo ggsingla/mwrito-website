@@ -1,13 +1,11 @@
-import "../styles/background.css";
-
-import React from "react";
+import { StyledBackgroundBottom, StyledBackgroundTop } from "./styles/background.styled";
 
 function Background() {
   return (
-    <div>
-      <div className="bg-grad straight"></div>
-      <div className="bg-grad reversed"></div>
-    </div>
+    <>
+      <StyledBackgroundTop/>
+      <StyledBackgroundBottom/>
+    </>
   );
 }
 

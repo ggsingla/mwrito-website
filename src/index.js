@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import '@fontsource/raleway'
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -10,3 +9,5 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+// https://react-icons.github.io/react-icons/icons?name=fa -- For React-Icons
