@@ -14,6 +14,7 @@ export const Button = styled.button`
   gap : 20px;
   border: none;
   white-space: nowrap;
+  width: max-content;
 `;
 
 export const LinedButton = styled.div` 

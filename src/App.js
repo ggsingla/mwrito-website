@@ -11,6 +11,7 @@ import { SpecialButton } from "./components/SpecialButton";
 import { TrendingCourses } from "./components/Courses/TrendingCourses";
 import { ContactForm } from "./components/ContactUs/ContactForm";
 import { Footer } from "./components/Footer/Footer";
+import { LatestBlogs } from "./components/Blogs/LatestBlogs";
 
 const theme = {
   colors: {
@@ -36,6 +37,7 @@ function App() {
         </Container>
         <SpecialButton />
         <Container>
+        <LatestBlogs/>
           <TrendingCourses />
           <ContactForm />
         </Container>
