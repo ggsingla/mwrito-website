@@ -9,5 +9,6 @@ export const Container = styled.section`
     flex-direction: column;
 `
 export const StyledSection = styled.section`
-    margin: 8em 0;
+    margin: 4em 0;
+    width: 100%;
 `

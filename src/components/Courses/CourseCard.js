@@ -34,7 +34,7 @@ export const CourseCard = () => {
           </Price>
           <Buy>
             <div className="tag">Class 8</div>
-            <a href="#">More Details <FaAngleRight/></a>
+            <a href="/">More Details <FaAngleRight/></a>
           </Buy>
       </PaymentDetails>
     </StyledCourseCard>

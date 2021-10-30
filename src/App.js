@@ -3,12 +3,15 @@ import "./index.css";
 import GlobalStyles from "./components/styles/Globals";
 import { ThemeProvider } from "styled-components";
 import { Nav } from "./components/NavBar";
-import { Container } from "./components/styles/Container.styled";
+import { Container } from "./components/styles/BasicUI/Container.styled";
 import { Header } from "./components/Header";
 import Feature from "./components/Feature";
 import content from "./content";
 import { SpecialButton } from "./components/SpecialButton";
 import { TrendingCourses } from "./components/Courses/TrendingCourses";
+import { ContactForm } from "./components/ContactUs/ContactForm";
+import { Footer } from "./components/Footer/Footer";
+
 const theme = {
   colors: {
     dark: "#051721",
@@ -34,7 +37,9 @@ function App() {
         <SpecialButton />
         <Container>
           <TrendingCourses />
+          <ContactForm />
         </Container>
+        <Footer/>
       </ThemeProvider>
     </>
   );

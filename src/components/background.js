@@ -1,4 +1,4 @@
-import { StyledBackgroundBottom, StyledBackgroundTop } from "./styles/background.styled";
+import { StyledBackgroundBottom, StyledBackgroundTop } from "./styles/BasicUI/background.styled";
 
 function Background() {
   return (

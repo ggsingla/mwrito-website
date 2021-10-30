@@ -1,6 +1,6 @@
 import {FaGooglePlay} from 'react-icons/fa'
 import { StyledHeader, Image, HeaderContent, BgLogo, StyledH1} from './styles/Header.styled'
-import { Button } from './styles/Button.styled'
+import { Button } from './styles/BasicUI/Button.styled'
 export function Header() {
   return (
     <StyledHeader>

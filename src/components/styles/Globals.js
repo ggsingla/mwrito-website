@@ -17,6 +17,12 @@ const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   }
+  a, a:active, a:visited{
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
   div#root {
       display: flex;
       flex-direction: column;
