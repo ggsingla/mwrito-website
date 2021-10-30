@@ -1,16 +1,19 @@
 import Background from "./components/background";
-import './index.css'
+import "./index.css";
 import GlobalStyles from "./components/styles/Globals";
 import { ThemeProvider } from "styled-components";
 import { Nav } from "./components/NavBar";
 import { Container } from "./components/styles/Container.styled";
 import { Header } from "./components/Header";
 import Feature from "./components/Feature";
-import content from './content'
+import content from "./content";
+import { SpecialButton } from "./components/SpecialButton";
+import { TrendingCourses } from "./components/Courses/TrendingCourses";
 const theme = {
   colors: {
     dark: "#051721",
     light: "#F5FCFF",
+    select: "#37AE5F",
   },
   mobile: "768px",
 };
@@ -27,6 +30,10 @@ function App() {
           {content.map((item, index) => (
             <Feature key={index} item={item} />
           ))}
+        </Container>
+        <SpecialButton />
+        <Container>
+          <TrendingCourses />
         </Container>
       </ThemeProvider>
     </>

@@ -13,7 +13,7 @@ const features = [
   },
   {
     id: 3,
-    title: "Live classes",
+    title: "Live classes by Individual Mentors",
     body: "Prepare for your Olympiad, JEE, Neet exams with our extensive and conceptual video lecture modules. Our expert mentors will help you gain expertise in all the chapters and concepts with their easy-to-understand teaching methods. Get ready to feel more confident and prepared for your future.",
     image: "Illustrations_features_3.svg",
   },
