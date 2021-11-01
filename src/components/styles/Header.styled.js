@@ -31,7 +31,7 @@ export const HeaderContent = styled.div`
   align-items: flex-start;
   justify-content: center;
   max-width: 40%;
-  gap: 1em;
+  gap: 2em;
   &::nth-child(2) {
     margin-bottom: 2em;
   }

@@ -63,16 +63,18 @@ export const Buy = styled.div`
   align-items: flex-end;
   flex-direction: column;
   gap: 2ch;
-  .tag{
-    background: #368F8B;
-border-radius: 5px;
-color : ${({theme})=>theme.colors.dark};
-padding: 2%;
-font-size: smaller;
-font-weight: bold;
+  .tag {
+    background: #368f8b;
+    border-radius: 10px;
+    color: ${({ theme }) => theme.colors.dark};
+    padding: 0.5ch 1ch;
+    font-size: smaller;
+    font-weight: bold;
   }
-  a, a:active, a:visited{
-    color:#F77F00;
+  a,
+  a:active,
+  a:visited {
+    color: #f77f00;
     text-decoration: none;
     vertical-align: 0;
     font-weight: bolder;

@@ -5,7 +5,7 @@ import { StyledSection } from "../styles/BasicUI/Container.styled";
 export const TrendingCourses = () => {
   return (
       <StyledSection>
-        <StyledH1>Treanding Courses</StyledH1>
+        <StyledH1>Trending Courses</StyledH1>
         <CardArray/>
         <Button bg= "#368F8B">View all Courses</Button>
       </StyledSection>
