@@ -1,5 +1,7 @@
 import { Buy, PaymentDetails, Price, Stats, StyledCourseCard } from "../styles/Courses/CourseCard.styled";
-import {FaAngleRight} from 'react-icons/fa'
+import {FaAngleRight} from 'react-icons/fa';
+
+
 export const CourseCard = () => {
   return (
     <StyledCourseCard>

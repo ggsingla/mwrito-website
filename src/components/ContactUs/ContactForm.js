@@ -6,6 +6,7 @@ import { ContactDetails } from "./ContactDetails";
 import { FormContents } from "../styles/ContactUs/ContactForm.styled";
 
 export const ContactForm = () => {
+  
   return (
     
       <StyledSection>
@@ -14,7 +15,6 @@ export const ContactForm = () => {
           <UserFields/>
           <ContactDetails/>
         </FormContents>
-        <Button>Send Message</Button>
       </StyledSection>
   );
 };
