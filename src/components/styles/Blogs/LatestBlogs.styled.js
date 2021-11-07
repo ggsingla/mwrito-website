@@ -13,17 +13,23 @@ export const StyledBlogCard = styled.div`
   position: relative;
   img{
       width: 300px;
+      object-fit: cover;
   }
   .content{
-      display:flex;
-      justify-content: space-between;
-      height: 100%;
-      gap: 3ch;
-      flex-direction: column;
+    &>* + *{
+      margin-top: 1em;
+        }
       width: 70%;
+      h2{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
       p{
           opacity: 60%;
           font-weight: 400;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          height: 10ch;
       }
   }
   a, a:active, a:visited{

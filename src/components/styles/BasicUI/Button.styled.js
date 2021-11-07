@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Button = styled.button`
   display: flex;
+  cursor: pointer;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -15,6 +16,10 @@ export const Button = styled.button`
   border: none;
   white-space: nowrap;
   width: max-content;
+  transition: all 300ms ease-in-out;
+  &:hover{
+    background-color: ${({ theme }) => theme.colors.light};
+  }
 `;
 
 export const LinedButton = styled.div` 
