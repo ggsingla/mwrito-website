@@ -7,7 +7,7 @@ export const StyledHeader = styled.header`
   position: relative;
 `;
 export const StyledH1 = styled.h1`
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: normal;
   text-align: left;
   span {

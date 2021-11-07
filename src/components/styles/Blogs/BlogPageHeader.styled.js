@@ -26,12 +26,19 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 2em;
+  margin-top: 1em;
+  @media screen and (max-width: ${({theme})=> theme.mobile}){
+    flex-direction: column-reverse;
+  }
 `;
 export const Image = styled.img`
   width: 50%;
   height: 400px;
   background-repeat: no-repeat;
   object-fit: cover;
+  @media screen and (max-width: ${({theme})=> theme.mobile}){
+    width: 100%;
+  }
 `;
 export const Text = styled.div`
   flex: 1;
@@ -39,6 +46,14 @@ export const Text = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  >*+*{
+    margin-top: 1em;
+  }
+  & > p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 12ch;
+  }
   a,
   a:active,
   a:visited {
@@ -54,7 +69,7 @@ export const Text = styled.div`
 
 export const Heading = styled.h1`
   display: block;
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 5vw, 3.25rem);
 `;
 export const PostDetails = styled.div`
     margin-bottom: 2em;

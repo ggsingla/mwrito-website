@@ -9,7 +9,7 @@ export const StyledBlogCard = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5em;
+  gap: clamp(2em, 5vw, 5em);
   position: relative;
   img{
       width: 300px;

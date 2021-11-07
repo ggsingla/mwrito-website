@@ -11,7 +11,7 @@ const BlogPageHeader = () => {
       </BreadCrumb>
       <Content>
           <Text>
-            <Heading>How to do smart work while studying ? </Heading>
+            <Heading>How to do smart work while studying? </Heading>
             <PostDetails>
               <p>October 30, 2021 <span>by Gautam Singla</span></p>
             </PostDetails>
