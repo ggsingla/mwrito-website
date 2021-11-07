@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 export const BlogHeader = styled.section`
   margin-block: 7em 4em;
   display: flex;
@@ -46,6 +45,13 @@ export const Text = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  ul{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  vertical-align: center;
+      list-style: georgian outside url(${process.env.PUBLIC_URL + '/assets/icons/Check.svg'});
+    }
   >*+*{
     margin-top: 1em;
   }
@@ -82,4 +88,5 @@ export const PostDetails = styled.div`
         font-weight: normal;
         color:rgba(255, 255, 255, 0.5); ;
     }
+    
 `;

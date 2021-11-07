@@ -5,6 +5,12 @@ export const StyledHeader = styled.header`
   align-items: center;
   justify-content: space-between;
   position: relative;
+  & > *{
+    flex: 1;
+  }
+  @media screen and (max-width: ${({theme})=> theme.mobile}){
+    flex-direction: column-reverse;
+  }
 `;
 export const StyledH1 = styled.h1`
   font-size: clamp(2rem, 5vw, 3.5rem);
@@ -22,7 +28,10 @@ export const BgLogo = styled.img`
   z-index: -1;
 `;
 export const Image = styled.img`
-  width: 55%;
+  max-width: 55%;
+  @media screen and (max-width: ${({theme})=> theme.mobile}){
+    max-width: 80%;
+  }
 `;
 
 export const HeaderContent = styled.div`
@@ -32,7 +41,16 @@ export const HeaderContent = styled.div`
   justify-content: center;
   max-width: 40%;
   gap: 2em;
+  p{
+    font-size: clamp(0.6rem, 2vw, 1rem);
+  }
   &::nth-child(2) {
     margin-bottom: 2em;
+  }
+  @media screen and (max-width: ${({theme})=> theme.mobile}){
+    align-items: center;
+    max-width: 90%;
+    text-align: center;
+    flex: 1;
   }
 `;

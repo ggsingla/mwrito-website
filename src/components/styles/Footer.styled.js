@@ -7,7 +7,7 @@ export const StyledFooter = styled.footer`
   flex-direction: column;
   background-color:#0C151B ;
   width: 100%;
-  padding: 40px 0;
+  padding: 40px 2em;
   gap:2em;
   margin-top: 4em;
 `
@@ -15,7 +15,12 @@ export const StyledFooterLinks = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap : 5ch;
+  flex-wrap: wrap;
+  column-gap : clamp(2em, 10vw, 5em);
+  row-gap: 2em;
+  @media screen and (max-width: 600px){
+    
+  }
 `
 export const StyledSocialLinks = styled.div`
   display: flex;
@@ -27,4 +32,5 @@ export const StyledSocialLinks = styled.div`
 `
 export const StyledCopyright = styled.p`
     color : #A09F9F;
+    text-align: center;
 `

@@ -5,6 +5,9 @@ import Home from './Pages/Home';
 import { Route, Routes } from 'react-router-dom';
 import BlogsPage from './Pages/blogsPage';
 import CoursePage from './Pages/CoursePage';
+import { Footer } from './components/Footer/Footer';
+import { Nav } from './components/NavBar';
+import Background from './components/background';
 const theme = {
   colors: {
     dark: '#051721',
@@ -19,6 +22,8 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
+        <Background />
+        <Nav />
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='blogs' element={<BlogsPage/>} />
@@ -26,6 +31,7 @@ function App() {
           {/* <Route path='/blogs' component={BlogPage} />
           <Route path='/courses' component={CoursePage} /> */}
         </Routes>
+        <Footer/>
       </ThemeProvider>
     </>
   );

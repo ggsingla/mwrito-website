@@ -5,11 +5,11 @@ export const BlogCard = (props) => {
   let {title,content,imageLink}=props;
   return (
     <StyledBlogCard>
-      <img src={imageLink} alt="Blog Image" alt = "Blog Image" />
+      <img src="" alt="Blog Image" alt = "Blog Image" />
       <div className="content">
-        <h2>{title}</h2>
+        <h2>C++</h2>
         <p>
-         {content}
+         content
         </p>
         <a href="/">
           More Details <FaAngleRight />

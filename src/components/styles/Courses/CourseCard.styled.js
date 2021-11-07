@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledCourseCard = styled.div`
   display: flex;
@@ -6,7 +6,10 @@ export const StyledCourseCard = styled.div`
   background: rgba(27, 96, 106, 0.5);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
   padding: 20px;
+  flex: 1;
   border-radius: 10px;
+  min-width: 300px;
+  max-width: 400px;
   gap: 3em;
   h3 {
     font-weight: normal;

@@ -5,6 +5,11 @@ export const StyledCardArray = styled.div`
   width: 100%;
   align-items: center;
   justify-content: stretch;
+  flex-wrap: wrap;
   gap: 40px;
   margin: 5em 0;
+  @media screen and (max-width: ${({theme})=> theme.mobile}){
+    flex-direction: column;
+    
+  }
 `;

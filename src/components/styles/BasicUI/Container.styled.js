@@ -12,4 +12,8 @@ export const Container = styled.section`
 export const StyledSection = styled.section`
     margin: 4em 0;
     width: 100%;
+    @media screen and (max-width: ${({theme})=> theme.mobile}){
+        align-items: center;
+        justify-content: center;
+  }
 `
