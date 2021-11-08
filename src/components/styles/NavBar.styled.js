@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import {FaBars} from 'react-icons/fa'
 export const StyledNav = styled.nav`
   display: flex;
   justify-content: space-between;
@@ -27,4 +27,14 @@ export const NavLinks = styled.div`
       flex-direction: row;
       gap : 1.5em;
   }
+  @media screen and (max-width : ${({theme})=> theme.mobile}){
+    display: none;
+  }
 `;
+
+export const Burger = styled(FaBars)`
+  display: none;
+  @media screen and (max-width : ${({theme})=> theme.mobile}){
+    display: block;
+  }
+`

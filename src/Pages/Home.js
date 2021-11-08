@@ -1,3 +1,4 @@
+import Background from '../components/background';
 import { LatestBlogs } from '../components/Blogs/LatestBlogs';
 import { ContactForm } from '../components/ContactUs/ContactForm';
 import { TrendingCourses } from '../components/Courses/TrendingCourses';
@@ -8,6 +9,7 @@ import { SpecialButton } from '../components/SpecialButton';
 const Home = () => {
   return (
     <>
+     <Background/>
       <Header />
       <Features />
       <SpecialButton />

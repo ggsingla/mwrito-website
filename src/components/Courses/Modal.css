@@ -1,0 +1,25 @@
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 1000ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background-color: #4b557052;
+    border-radius: 10px;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: #5BC0BE;
+    border-radius: 10px;
+}

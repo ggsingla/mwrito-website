@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import {IoClose} from 'react-icons/io5'
 export const StyledCourseCard = styled.div`
   display: flex;
   flex-direction: column;
@@ -74,15 +74,11 @@ export const Buy = styled.div`
     font-size: smaller;
     font-weight: bold;
   }
-  a,
-  a:active,
-  a:visited {
-    color: #f77f00;
-    text-decoration: none;
-    vertical-align: 0;
-    font-weight: bolder;
-    display: flex;
-    align-items: center;
-    gap: 1ch;
-  }
+`;
+export const Cross = styled(IoClose)`
+  position: absolute;
+  color: white;
+  top: 1em;
+  right: 2em;
+  font-size: 2rem;
 `;

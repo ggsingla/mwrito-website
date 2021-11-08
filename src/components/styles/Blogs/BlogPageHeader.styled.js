@@ -26,7 +26,7 @@ export const Content = styled.div`
   justify-content: space-between;
   gap: 2em;
   margin-top: 1em;
-  @media screen and (max-width: ${({theme})=> theme.mobile}){
+  @media screen and (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column-reverse;
   }
 `;
@@ -35,7 +35,7 @@ export const Image = styled.img`
   height: 400px;
   background-repeat: no-repeat;
   object-fit: cover;
-  @media screen and (max-width: ${({theme})=> theme.mobile}){
+  @media screen and (max-width: ${({ theme }) => theme.mobile}) {
     width: 100%;
   }
 `;
@@ -45,31 +45,20 @@ export const Text = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  ul{
+  ul {
     display: flex;
     flex-direction: column;
-  align-items: center;
-  vertical-align: center;
-      list-style: georgian outside url(${process.env.PUBLIC_URL + '/assets/icons/Check.svg'});
-    }
-  >*+*{
+    vertical-align: center;
+    padding-left:2em;
+    list-style: url(${process.env.PUBLIC_URL + '/assets/icons/Check.svg'});
+  }
+  > * + * {
     margin-top: 1em;
   }
-  & > p{
+  & > p {
     text-overflow: ellipsis;
     overflow: hidden;
     height: 12ch;
-  }
-  a,
-  a:active,
-  a:visited {
-    color: #368f8b;
-    text-decoration: none;
-    vertical-align: 0;
-    font-weight: bolder;
-    display: flex;
-    align-items: center;
-    gap: 1ch;
   }
 `;
 
@@ -78,15 +67,12 @@ export const Heading = styled.h1`
   font-size: clamp(2rem, 5vw, 3.25rem);
 `;
 export const PostDetails = styled.div`
-    margin-bottom: 2em;
-    p{
-        font-weight:700;
-
-
-    }
-    span{
-        font-weight: normal;
-        color:rgba(255, 255, 255, 0.5); ;
-    }
-    
+  margin-bottom: 2em;
+  p {
+    font-weight: 700;
+  }
+  span {
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.5);
+  }
 `;

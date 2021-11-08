@@ -1,4 +1,5 @@
 import { FaAngleRight } from 'react-icons/fa';
+import { ButtonSecondary } from '../styles/BasicUI/Button.styled';
 import { Container } from '../styles/BasicUI/Container.styled';
 import { BlogHeader, BreadCrumb, Text, Heading, PostDetails, Content, Image } from '../styles/Blogs/BlogPageHeader.styled';
 
@@ -23,9 +24,9 @@ const BlogPageHeader = () => {
                 convallis. Malesuada pretium semper leo vel nunc. Arcu, fusce eget
                 tortor lobortis feugiat ornare elit morbi. Morbi urna.
               </p>
-              <a href="/">
+              <ButtonSecondary text = '#368f8b' >
                 More Details <FaAngleRight />
-              </a>
+              </ButtonSecondary>
             </Text>
             <Image src = "https://source.unsplash.com/random"/>
         </Content>

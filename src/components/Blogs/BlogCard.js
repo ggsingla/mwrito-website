@@ -1,4 +1,5 @@
 import { FaAngleRight } from "react-icons/fa";
+import { ButtonSecondary } from "../styles/BasicUI/Button.styled";
 import { StyledBlogCard } from "../styles/Blogs/LatestBlogs.styled";
 
 export const BlogCard = (props) => {
@@ -11,9 +12,9 @@ export const BlogCard = (props) => {
         <p>
          content
         </p>
-        <a href="/">
+        <ButtonSecondary text = "#368f8b">
           More Details <FaAngleRight />
-        </a>
+        </ButtonSecondary>
       </div>
     </StyledBlogCard>
   );

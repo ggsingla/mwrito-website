@@ -1,12 +1,14 @@
 import { Link } from 'react-router-dom';
 import { Container } from './styles/BasicUI/Container.styled';
-import { StyledNav, Logo, NavLinks } from './styles/NavBar.styled';
+import { StyledNav, Logo, NavLinks, Burger } from './styles/NavBar.styled';
 
 export const Nav = () => {
   return (
     <Container>
       <StyledNav>
-        <Logo>M WRITO</Logo>
+        <Link to = "/">
+          <Logo>M WRITO</Logo>
+        </Link>
         <NavLinks>
           <ul>
             <Link to = '/'>
@@ -21,6 +23,7 @@ export const Nav = () => {
             <li>Contact Us</li>
           </ul>
         </NavLinks>
+        <Burger/>
       </StyledNav>
     </Container>
   );
