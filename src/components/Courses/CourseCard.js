@@ -11,45 +11,64 @@ import Modal from 'react-modal';
 import { CourseContent } from './CoursePageHeader';
 import { ButtonSecondary } from '../styles/BasicUI/Button.styled';
 import { useState } from 'react';
-import './Modal.css'
+import './Modal.css';
 Modal.setAppElement('#root');
 
-export const CourseCard = () => {
+export const CourseCard = ({
+  item: {
+    title,
+    difficulty,
+    videos,
+    hours,
+    features1,
+    features2,
+    features3,
+    features4,
+    image,
+    orgPrice,
+    disPrice,
+    grade,
+  },
+}) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   return (
     <StyledCourseCard>
-      <h3>Full syllabus + JEE foundation course</h3>
+      <h3>{title}</h3>
       <Stats>
         <div className='difficulty'>
           <img
             src={
               process.env.PUBLIC_URL +
-              '/assets/Difficulty Selector/Difficulty Bar E.svg'
+              `/assets/Difficulty Selector/Difficulty Bar ${difficulty}.svg`
             }
             alt=''
           />
-          <p>Easy</p>
+          <p>{
+            difficulty==='E' ? 'Easy'
+            : difficulty === 'M'? 'Medium'
+            : 'Hard'
+            }</p>
         </div>
         <div className='nums'>
           <div className='videos'>
-            <h3>50</h3>
+            <h3>{videos}</h3>
             <p>Videos</p>
           </div>
           <div className='separator'></div>
           <div className='time'>
-            <h3>50</h3>
+            <h3>{hours}</h3>
             <p>Hours</p>
           </div>
         </div>
       </Stats>
       <PaymentDetails>
         <Price>
-          <h3>&#8377;6000</h3>
-          <h2>&#8377;4999</h2>
+          <h3>&#8377;{orgPrice}</h3>
+          <h2>&#8377;{disPrice}</h2>
         </Price>
         <Buy>
-          <div className='tag'>Class 8</div>
+          <div className='tag'>Class {grade}</div>
           <ButtonSecondary onClick={() => setModalIsOpen(true)}>
             More Details <FaAngleRight />
           </ButtonSecondary>
@@ -79,8 +98,17 @@ export const CourseCard = () => {
             position: 'relative',
           },
         }}>
-        <Cross onClick={()=> setModalIsOpen(false)} />
-        <CourseContent />
+        <Cross onClick={() => setModalIsOpen(false)} />
+        <CourseContent
+          title={title}
+          features1={features1}
+          features2={features2}
+          features3={features3}
+          features4={features4}
+          image={image}
+          grade={grade}
+          difficulty={difficulty}
+        />
       </Modal>
     </StyledCourseCard>
   );

@@ -1,5 +1,5 @@
 import Background from '../components/background';
-import { LatestBlogs } from '../components/Blogs/LatestBlogs';
+// import { LatestBlogs } from '../components/Blogs/LatestBlogs';
 import { ContactForm } from '../components/ContactUs/ContactForm';
 import { TrendingCourses } from '../components/Courses/TrendingCourses';
 import { Features } from '../components/Features';
@@ -13,7 +13,7 @@ const Home = () => {
       <Header />
       <Features />
       <SpecialButton />
-      <LatestBlogs />
+      {/* <LatestBlogs /> */}
       <TrendingCourses />
       <ContactForm />
     </>

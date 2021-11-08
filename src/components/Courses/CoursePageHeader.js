@@ -29,38 +29,34 @@ export const CoursePageHeader = () => {
   );
 };
 
-export const CourseContent = () => {
+export const CourseContent = (props) => {
 
   return (
     <>
       <Content>
         <Text>
-          <Heading>Full syllabus + JEE foundation course </Heading>
+          <Heading>{props.title}</Heading>
           <CourseDetails>
-            <p>Class 8</p>
+            <p>Class {props.grade}</p>
             <img
               src={
                 process.env.PUBLIC_URL +
-                '/assets/Difficulty Selector/Difficulty Bar E.svg'
+                `/assets/Difficulty Selector/Difficulty Bar ${props.difficulty}.svg`
               }
             />
           </CourseDetails>
           <ul>
             <li>
-              Why code is the key to building whatever you can imagine with
-              WordPress
+              {props.features1}
             </li>
             <li>
-              The ability to write JavaScript to add on-the-fly interactivity to
-              a WordPress site
+              {props.features2}
             </li>
             <li>
-              The skills, knowledge and vocabulary to work professionally as a
-              WordPress developer
+            {props.features3}
             </li>
             <li>
-              The ability to write PHP to manipulate the data of a WordPress
-              site
+            {props.features4}
             </li>
           </ul>
           <Link to ='/download'>
@@ -69,7 +65,7 @@ export const CourseContent = () => {
             </ButtonSecondary>
           </Link>
         </Text>
-        <Image src='https://source.unsplash.com/random' alt='courseImage' />
+        <Image src={props.image} alt='courseImage' />
       </Content>
     </>
   );
