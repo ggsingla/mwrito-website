@@ -7,8 +7,9 @@ import BlogsPage from './Pages/blogsPage';
 import CoursePage from './Pages/CoursePage';
 import { Footer } from './components/Footer/Footer';
 import { Nav } from './components/NavBar';
-import Background from './components/background';
 import { DownloadPage } from './Pages/downloadPage';
+import { ContactPage } from './Pages/contactPage';
+
 const theme = {
   colors: {
     dark: '#051721',
@@ -29,6 +30,7 @@ function App() {
           <Route path='blogs' element={<BlogsPage/>} />
           <Route path='courses' element={<CoursePage/>} />
           <Route path='download' element={<DownloadPage/>} />
+          <Route path='contactus' element={<ContactPage/>} />
           {/* <Route path='/blogs' component={BlogPage} />
           <Route path='/courses' component={CoursePage} /> */}
         </Routes>

@@ -23,7 +23,9 @@ export const Nav = (props) => {
             <Link to='/blogs'>
               <li>Blogs</li>
             </Link>
-            <li>Contact Us</li>
+            <Link to= '/contactus'>
+              <li>Contact Us</li>
+            </Link>
           </ul>
         </NavLinks>
         <Burger menu = {isOpen} onClick = {() => setIsOpen(prev => !prev)}><FaBars/></Burger>

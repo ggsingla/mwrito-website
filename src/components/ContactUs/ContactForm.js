@@ -1,4 +1,3 @@
-import { Button } from "../styles/BasicUI/Button.styled";
 import { StyledH1 } from "../styles/Header.styled";
 import { Container, StyledSection } from "../styles/BasicUI/Container.styled";
 import { UserFields } from "./UserFields";
