@@ -7,10 +7,11 @@ import {
   StyledH1,
 } from "./styles/Header.styled";
 import { Button } from "./styles/BasicUI/Button.styled";
-import { Container } from "./styles/BasicUI/Container.styled";
+import { Container, StyledSection } from "./styles/BasicUI/Container.styled";
 export function Header() {
   return (
     <Container>
+      <StyledSection>
     <StyledHeader>
       <BgLogo src={process.env.PUBLIC_URL + "/assets/logo_light.svg"} />
       <HeaderContent>
@@ -30,6 +31,7 @@ export function Header() {
       </HeaderContent>
       <Image src={process.env.PUBLIC_URL + "/assets/mockup.png"} alt="mockup" />
     </StyledHeader>
+    </StyledSection>
     </Container>
   );
 }

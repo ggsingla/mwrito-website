@@ -5,11 +5,13 @@ export const StyledCourseCard = styled.div`
   flex-direction: column;
   background: rgba(27, 96, 106, 0.5);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
-  padding: 20px;
+  padding:1em;
+  max-width: 400px;
+  min-width: 300px;
+  height: 350px;
   flex: 1;
   border-radius: 10px;
-  min-width: 300px;
-  max-width: 400px;
+  justify-content: space-between;
   gap: 3em;
   h3 {
     font-weight: normal;
