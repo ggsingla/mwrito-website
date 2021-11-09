@@ -1,15 +1,18 @@
+import { useState } from 'react';
+import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { Container } from './styles/BasicUI/Container.styled';
 import { StyledNav, Logo, NavLinks, Burger } from './styles/NavBar.styled';
 
-export const Nav = () => {
+export const Nav = (props) => {
+  const [isOpen , setIsOpen] = useState(false)
   return (
     <Container>
       <StyledNav>
         <Link to = "/">
           <Logo>M WRITO</Logo>
         </Link>
-        <NavLinks>
+        <NavLinks menu= {isOpen} >
           <ul>
             <Link to = '/'>
                 <li>Home</li>
@@ -23,7 +26,7 @@ export const Nav = () => {
             <li>Contact Us</li>
           </ul>
         </NavLinks>
-        <Burger/>
+        <Burger menu = {isOpen} onClick = {() => setIsOpen(prev => !prev)}><FaBars/></Burger>
       </StyledNav>
     </Container>
   );

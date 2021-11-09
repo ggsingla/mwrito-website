@@ -13,6 +13,8 @@ import {
 } from '../styles/Blogs/BlogPageHeader.styled';
 
 import { CourseDetails } from '../styles/Courses/CoursePageHeader.styled';
+import data from '../../courseData'
+let tsCourse = data[0]
 
 export const CoursePageHeader = () => {
   return (
@@ -23,7 +25,16 @@ export const CoursePageHeader = () => {
           <li>Courses</li>
           <li>Top Selling</li>
         </BreadCrumb>
-        <CourseContent />
+        <CourseContent
+          title={tsCourse.title}
+          features1={tsCourse.features1}
+          features2={tsCourse.features2}
+          features3={tsCourse.features3}
+          features4={tsCourse.features4}
+          image={tsCourse.image}
+          grade={tsCourse.grade}
+          difficulty={tsCourse.difficulty}
+        />
       </BlogHeader>
     </Container>
   );
