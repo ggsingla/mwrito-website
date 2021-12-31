@@ -5,7 +5,7 @@ export const ContactDetails = () => {
     <StyledContactDetails>
       <h3>
         <FaEnvelope />
-        writoprovatelimited@gmail.com
+        writoprivatelimited@gmail.com
       </h3>
       <h3>
         <FaPhoneAlt />
@@ -13,7 +13,7 @@ export const ContactDetails = () => {
       </h3>
       <h3>
         <FaHashtag />
-       G.T. Road, Amritsar Bypass, Jalandhar (Punjab), India - 144011
+        41, amandeep avanue, maqsudan Jalandhar Punjab 144027
       </h3>
     </StyledContactDetails>
   );
