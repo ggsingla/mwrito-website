@@ -24,10 +24,12 @@ export function Header() {
           interactive doubt solving sessions, and well-strategized mock paper
           quizzes. Be "future-ready" on this rich learning experience with us.
         </p>
-        <Button>
-          Get the App
-          <FaGooglePlay />
-        </Button>
+        <a href="https://play.google.com/store/apps/details?id=com.wisewizard.writo_learning_app">
+          <Button>
+            Get the App
+            <FaGooglePlay />
+          </Button>
+        </a>
       </HeaderContent>
       <Image src={process.env.PUBLIC_URL + "/assets/mockup.png"} alt="mockup" />
     </StyledHeader>

@@ -5,12 +5,12 @@ export const ContactDetails = () => {
     <StyledContactDetails>
       <h3>
         <FaEnvelope />
-        writoprivatelimited@gmail.com
+        aoyt@mwrito.com
       </h3>
-      <h3>
+      {/* <h3>
         <FaPhoneAlt />
         +91 86079 69369
-      </h3>
+      </h3> */}
       <h3>
         <FaHashtag />
         41, amandeep avanue, maqsudan Jalandhar Punjab 144027
