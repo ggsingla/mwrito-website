@@ -1,4 +1,5 @@
 import Background from '../components/background';
+// import { BackToTop } from '../components/styles/BasicUI/BackToTop.js';
 // import { LatestBlogs } from '../components/Blogs/LatestBlogs';
 import { ContactForm } from '../components/ContactUs/ContactForm';
 import { TrendingCourses } from '../components/Courses/TrendingCourses';
@@ -11,6 +12,7 @@ const Home = () => {
     <>
      <Background/>
       <Header />
+      {/* <BackToTop/> */}
       <Features />
       <SpecialButton />
       {/* <LatestBlogs /> */}

@@ -56,3 +56,8 @@ export const LinedButton = styled.div`
     width: inherit;
   }
 `;
+
+export const scrollBack = styled.button`
+  display: flex;
+  color: red;
+`
