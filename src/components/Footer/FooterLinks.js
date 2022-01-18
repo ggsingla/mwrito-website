@@ -1,13 +1,14 @@
+import { Link } from "react-router-dom"
 import { StyledFooterLinks } from "../styles/Footer.styled"
 
 export const FooterLinks = () => {
     return (
         <StyledFooterLinks>
-            <a href="/">About</a>
-            <a href="/">FAQs</a>
-            <a href="/">Privacy Policy</a>
-            <a href="/">Refund Policy</a>
-            <a href="/">Terms of Service</a>
+            <Link to='about'>About</Link>
+            <Link to='/faqs'>FAQs</Link>
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/">Refund Policy</Link>
+            <Link to="/">Terms of Service</Link>
         </StyledFooterLinks>
     )
 }
