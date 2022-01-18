@@ -1,11 +1,16 @@
+body{
+    background-image: linear-gradient(180deg, #003e3e 39.22%, #05172100 100%);
+}
+
 article{
     width: 100%;
     max-width: 1200px;
     line-height: 1.5;
-    margin-top: 3em;
+    margin-block: 3em;
     padding-inline: 2em;
 }
 article h1{
+    text-align: left;
     font-size: 3rem;
     margin-bottom: 1em;
     padding-bottom:0.1em;
@@ -19,9 +24,19 @@ article h3{
     margin-bottom: 1em;
     border-bottom: 1px solid rgb(161, 161, 161);
 }
-article ul{
+article ul,ol{
     margin-left: 1em;
     margin-bottom: 1em;
+}
+.ques{
+    font-weight: bolder;
+    margin-bottom: .5em;
+}
+ol{
+    margin-top: 4em;
+}
+ol li{
+    margin-bottom: 2em;
 }
 
 @media ( max-width: 768px){

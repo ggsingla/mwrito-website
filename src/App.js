@@ -11,6 +11,9 @@ import { DownloadPage } from './Pages/downloadPage';
 import { ContactPage } from './Pages/contactPage';
 import { PrivacyPolicy } from './Pages/privacyPolicy';
 import ScrollToTop from './components/ScrollToTop';
+import { TermsOfService } from './Pages/termsOfService';
+import { FAQs } from './Pages/faqs';
+import { AboutUs } from './Pages/aboutUs';
 
 const theme = {
   colors: {
@@ -35,6 +38,9 @@ function App() {
           <Route path='download' element={<DownloadPage/>} />
           <Route path='contactus' element={<ContactPage/>} />
           <Route path='privacy-policy' element={<PrivacyPolicy/>} />
+          <Route path='terms-of-service' element={<TermsOfService/>} />
+          <Route path='faqs' element={<FAQs/>} />
+          <Route path='about' element={<AboutUs/>} />
           {/* <Route path='/blogs' component={BlogPage} />
           <Route path='/courses' component={CoursePage} /> */}
         </Routes>

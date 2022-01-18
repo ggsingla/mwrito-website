@@ -5,10 +5,9 @@ export const FooterLinks = () => {
     return (
         <StyledFooterLinks>
             <Link to='about'>About</Link>
-            <Link to='/faqs'>FAQs</Link>
-            <Link to="/privacy-policy">Privacy Policy</Link>
-            <Link to="/">Refund Policy</Link>
-            <Link to="/">Terms of Service</Link>
+            <Link to='faqs'>FAQs</Link>
+            <Link to="privacy-policy">Privacy Policy</Link>
+            <Link to="terms-of-service">Terms of Service</Link>
         </StyledFooterLinks>
     )
 }
