@@ -41,8 +41,8 @@ function App() {
           <Route path='terms-of-service' element={<TermsOfService/>} />
           <Route path='faqs' element={<FAQs/>} />
           <Route path='about' element={<AboutUs/>} />
-          {/* <Route path='/blogs' component={BlogPage} />
-          <Route path='/courses' component={CoursePage} /> */}
+          {/* <Route path='/blogs' component={BlogPage} /> */}
+          <Route path='/courses' component={CoursePage} />
         </Routes>
         <Footer/>
       </ThemeProvider>
