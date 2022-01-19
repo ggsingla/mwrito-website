@@ -28,17 +28,33 @@ article ul,ol{
     margin-left: 1em;
     margin-bottom: 1em;
 }
+article img{
+    margin-bottom: 2rem;
+    width: 100%;
+}
 .ques{
     font-weight: bolder;
     margin-bottom: .5em;
 }
+
 ol{
     margin-top: 4em;
 }
 ol li{
     margin-bottom: 2em;
 }
-
+.link{
+    display: inline-block;
+    color:#37AE5F !important;
+    text-decoration: underline !important;
+    transition: all 200ms ease-in;
+}
+.link:hover, .link:active{
+    display: inline-block;
+    color:#F77F00 !important;
+    text-decoration: underline !important;
+    transition: color 200ms ease-in;
+}
 @media ( max-width: 768px){
     html{
         font-size:14px;

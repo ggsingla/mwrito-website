@@ -19,7 +19,7 @@ export const RegisterModal = () => {
             </Images>
             <Text>
                 <h1>Download our app to get access to all the courses</h1>
-                <Button>Get the App <FaGooglePlay/></Button>
+                <a href="https://play.google.com/store/apps/details?id=com.wisewizard.writo_learning_app"><Button>Get the App <FaGooglePlay/></Button></a>
             </Text>
         </StyledRegisterModal>
         </>

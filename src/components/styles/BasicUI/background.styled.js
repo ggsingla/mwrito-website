@@ -13,8 +13,8 @@ export const StyledSinglePageBG = styled.div`
   position: absolute;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(180deg, #003e3e 39.22%, #05172100 100%);
-  top: 0;
+  background: linear-gradient(0deg, #003e3e 50%, #05172100 100%);
+  bottom: 0;
   left: 0;
   z-index: -2;
 `;

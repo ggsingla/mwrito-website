@@ -9,7 +9,7 @@ export const StyledFooter = styled.footer`
   width: 100%;
   padding: 40px 2em;
   gap:2em;
-  margin-top: 4em;
+  margin-top: auto;
 `
 export const StyledFooterLinks = styled.div`
   display: flex;

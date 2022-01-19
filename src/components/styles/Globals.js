@@ -14,6 +14,7 @@ const GlobalStyles = createGlobalStyle`
     color: ${({theme}) => theme.colors.light};
     position: relative;
     font-size: 1.15em;
+    min-height: 100vh;
     -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   }

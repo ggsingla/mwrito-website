@@ -1,8 +1,10 @@
-import { StyledBackgroundTop } from '../components/styles/BasicUI/background.styled'
+import { Link } from 'react-router-dom'
+import { StyledSinglePageBG } from '../components/styles/BasicUI/background.styled'
 import './styles/footer-pages.css'
 export const FAQs = () => {
   return (
     <>
+    <StyledSinglePageBG/>
       <article>
         <h1>Frequently Asked Questions</h1>
         <ol type="i">
@@ -46,7 +48,7 @@ export const FAQs = () => {
               Where would I be able to observe the courses presented by Mwrito?
             </div>
             <div className='ans'>
-              Click here to view the courses offered by Mwrito.
+              Click <Link className= "link" to = "/courses">here</Link> to view the courses offered by Mwrito.
             </div>
           </li>
           <li>
