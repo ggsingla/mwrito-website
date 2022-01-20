@@ -57,7 +57,7 @@ export const Text = styled.div`
   }
   & > p {
     text-overflow: ellipsis;
-    overflow: hidden;
+    
     height: 12ch;
   }
 `;
